@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/show_groscaledetail"
+        android:name="com.clinicapp.ui.GroScale_Index_Scalp.Gro_Scalp_Detail_Fragment"
+        android:label="Gro Scale Detail"
+        tools:layout="@layout/fragment_grow_scalp_detail"
+        >
+        <action
+            android:id="@+id/action_show_treatment"
+            app:destination="@id/show_treatment" />
+    </fragment>
+
+      <fragment
+        android:id="@+id/show_groscale"
+        android:name="com.clinicapp.ui.GroScale_Index_Scalp.Gro_Scale_Fragment"
+        android:label="Gro Scale"
+        tools:layout="@layout/fragment_grow_scale_hair_position_new"
+        ></fragment>
+
+    <fragment
+        android:id="@+id/show_groscalp"
+        android:name="com.clinicapp.ui.GroScale_Index_Scalp.Gro_Scalp_ViewPager_Fragment"
+        android:label="Gro Scale"
+        tools:layout="@layout/fragment_scalp_information_viewpager"
+        >
+        <action
+            android:id="@+id/action_gro_scalp_detail"
+            app:destination="@id/show_groscaledetail"
+            app:popUpTo="@id/show_groscaledetail" />
+    </fragment>
+
+     <fragment
+        android:id="@+id/show_mdrefer"
+        android:name="com.clinicapp.ui.Treatment.Refer_MD_ViewPager_Fragment"
+        android:label="Gro Scale"
+        tools:layout="@layout/fragment_refer_md_viewpager"
+        >
+         <action
+             android:id="@+id/action_returnToHomeScreen_to_homeFragment"
+             app:destination="@id/homeFragment"
+             app:popUpTo="@id/homeFragment" />
+     </fragment>
+
+      <fragment
+        android:id="@+id/show_products_viewPager_fragment"
+        android:name="com.clinicapp.ui.Treatment.Products_ViewPager_Fragment"
+        android:label="Gro Scale"
+        tools:layout="@layout/fragment_purchase_product_viewpager"
+        >
+          <action
+              android:id="@+id/action_returnToHomeScreen_to_homeFragment"
+              app:destination="@id/homeFragment"
+              app:popUpTo="@id/homeFragment" />
+      </fragment>
+
+     <fragment
+        android:id="@+id/show_treatment"
+        android:name="com.clinicapp.ui.Treatment.Treatment_Fragment"
+        android:label="Treatment"
+        tools:layout="@layout/fragment_treatment_selection"
+        >
+         <action
+             android:id="@+id/action_product_viewpager"
+             app:destination="@id/show_products_viewPager_fragment" />
+
+
+          <action
+             android:id="@+id/action_md_refer"
+             app:destination="@id/show_mdrefer" />
+
+         <action
+             android:id="@+id/action_scalp_treatment"
+             app:destination="@id/show_groscalp" />
+
+     </fragment>
+
+       <fragment
+        android:id="@+id/groscale_viewpager"
+        android:name="com.clinicapp.ui.GroScale_Index_Scalp.Gro_Scale_ViewPager_Fragment"
+        android:label="Gro Scale"
+        tools:layout="@layout/fragment_grow_scale_viewpager"
+        >
+           <action
+               android:id="@+id/action_show_treatment"
+               app:destination="@id/show_treatment" />
+       </fragment>
+
+     <fragment
+        android:id="@+id/groindex_viewpager"
+        android:name="com.clinicapp.ui.GroScale_Index_Scalp.Gro_Index_ViewPager_Fragment"
+        android:label="Gro Index"
+        tools:layout="@layout/fragment_grow_scale_viewpager"
+        ></fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.clinicapp.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_newPatientFragment"
+            app:destination="@id/newPatientFragment"
+            />
+        <action
+            android:id="@+id/action_homeFragment_to_searchPatientFragment"
+            app:destination="@id/searchPatientFragment"
+          />
+    </fragment>
+    <fragment
+        android:id="@+id/newPatientFragment"
+        android:name="com.clinicapp.ui.home.NewPatientFragment"
+        android:label="New Patient"
+        tools:layout="@layout/fragment_new_patient" >
+        <action
+            android:id="@+id/action_newPatientFragment_to_selectShootPosition"
+            app:destination="@id/selectShootPosition" />
+        <action
+            android:id="@+id/action_returnToHomeScreen_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchPatientFragment"
+        android:name="com.clinicapp.ui.home.SearchPatientsFragment"
+        android:label="Search Patient"
+        tools:layout="@layout/fragment_search_patients" >
+        <action
+            android:id="@+id/action_searchPatientFragment_to_resultScreen"
+            app:destination="@id/resultScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultScreen"
+        android:name="com.clinicapp.ui.home.SearchResultsContainerFragment"
+        android:label="Search Results"
+        tools:layout="@layout/fragment_search_results" >
+        <action
+            android:id="@+id/action_resultScreen_to_selectShootPosition"
+            app:destination="@id/selectShootPosition" />
+        <action
+            android:id="@+id/action_cameraFragment_to_returnToHomeScreen"
+            app:destination="@id/returnToHomeScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectShootPosition"
+        android:name="com.clinicapp.ui.camera.PortraitPositionSelectionFragment"
+        android:label="fragment_portrait_image_selection"
+        tools:layout="@layout/fragment_portrait_image_selection" >
+        <action
+            android:id="@+id/action_selectShootPosition_to_cameraFragment"
+            app:destination="@id/cameraFragment" >
+            <argument
+                android:name="isPortrait"
+                android:defaultValue="true" />
+        </action>
+        <action
+            android:id="@+id/action_selectShootPosition_to_selectHairPosition"
+            app:destination="@id/selectHairPosition"/>
+        <argument
+            android:name="DATA"
+            app:argType="com.clinicapp.models.Patient" />
+        <action
+            android:id="@+id/action_homeFragment_to_newPatientFragment"
+            app:destination="@id/newPatientFragment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.clinicapp.ui.camera.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" >
+        <action
+            android:id="@+id/action_cameraFragment_to_returnToHomeScreen"
+            app:destination="@id/returnToHomeScreen" />
+        <argument
+            android:name="isPortrait"
+            app:argType="boolean"
+            android:defaultValue="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/returnToHomeScreen"
+        android:name="com.clinicapp.ui.camera.ReturnToHomeScreenFragment"
+        android:label="fragment_return_or_shoot_hair"
+        tools:layout="@layout/fragment_return_or_shoot_hair" >
+        <action
+            android:id="@+id/action_returnToHomeScreen_to_selectHairPosition"
+            app:destination="@id/selectHairPosition" />
+        <action
+            android:id="@+id/action_returnToHomeScreen_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
+        <action
+            android:id="@+id/action_gro_scale_viewpager"
+            app:destination="@id/groscale_viewpager"
+            app:popUpTo="@id/groscale_viewpager" />
+         <action
+            android:id="@+id/action_gro_index_viewpager"
+            app:destination="@id/groindex_viewpager"
+            app:popUpTo="@id/groindex_viewpager" />
+        <action
+            android:id="@+id/action_scarlp_info"
+            app:destination="@id/show_groscalp"
+            app:popUpTo="@id/show_groscalp" />
+
+        <argument
+            android:name="isPortrait"
+            app:argType="boolean"
+            android:defaultValue="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/selectHairPosition"
+        android:name="com.clinicapp.ui.camera.SelectHairPositionFragment"
+        android:label="Select Hair Position"
+        tools:layout="@layout/fragment_select_hair_position" >
+        <action
+            android:id="@+id/action_selectHairPosition_to_cameraFragment"
+            app:destination="@id/cameraFragment" >
+            <argument
+                android:name="isPortrait"
+                android:defaultValue="false" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/select_growscale"
+        android:name="com.clinicapp.ui.camera.SelectHairPositionFragment"
+        android:label="Select Hair Position"
+        tools:layout="@layout/fragment_select_hair_position" >
+        <action
+            android:id="@+id/action_selectHairPosition_to_cameraFragment"
+            app:destination="@id/cameraFragment" >
+            <argument
+                android:name="isPortrait"
+                android:defaultValue="false" />
+        </action>
+    </fragment>
+</navigation>

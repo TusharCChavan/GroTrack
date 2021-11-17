@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.camera.ReturnToHomeScreenFragment">
+
+
+    <ImageView
+        android:id="@+id/iv_product"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/tv_producttital"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcolor"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/_17ssp"
+        android:text="Topical Serum Kerafactor"/>
+
+
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+    <TextView
+        android:id="@+id/tv_productdes"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcolor"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/_11ssp"
+        android:text="KeraFactor Peptide Complex (KFP) is a breakthrough formulation containing 7 Polypeptides, carefully curated by Dermatologists. KFP proteins and growth factors are wrapped in nano-liposomes to provide optimum absorption by the scalp."/>
+
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btpurchase"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/footer"
+        android:text="PURCHASE"
+        android:layout_centerInParent="true"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:cornerRadius="10dp"
+        android:layout_gravity="center"
+        />
+
+        <ProgressBar
+            android:id="@+id/progress_circular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+
+</LinearLayout>

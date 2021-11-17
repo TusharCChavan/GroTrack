@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.camera.ReturnToHomeScreenFragment">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_product"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:src="@drawable/avtar_img" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_producttital"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcolor"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_17ssp"
+        android:text="Yael Halaas, MD\nTransplant Specialist"/>
+
+
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+    <TextView
+        android:id="@+id/tv_productdes"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcolor"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/_11ssp"
+        android:text="Meet Hair Transplant Surgeon Dr. Yael Halaas, MD, ABHRS, IAHRS, FISHRS, Founder, CEO &amp; Medical Director"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/iv_left"
+            android:layout_marginTop="30dp"
+            android:layout_centerInParent="true"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:src="@drawable/campair_img" />
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/iv_eight"
+            android:layout_marginTop="30dp"
+            android:layout_centerInParent="true"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:src="@drawable/compair_img_1" />
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_refer"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/footer"
+            android:text="SEND REFERRAL"
+            android:layout_centerInParent="true"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:cornerRadius="10dp"
+            android:layout_gravity="center"
+            />
+
+        <ProgressBar
+            android:id="@+id/progress_circular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

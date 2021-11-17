@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="round_button_diameter">62dp</dimen>
+    <dimen name="text">16sp</dimen>
+    <dimen name="input_textfield_height">30dp</dimen>
+    <dimen name="input_text">12sp</dimen>
+    <dimen name="input_text_err">10sp</dimen>
+
+    <dimen name="btn_corner_radius">37dp</dimen>
+    <dimen name="input_padding">18dp</dimen>
+    <dimen name="one_hundred_forty_dp">140dp</dimen>
+    <dimen name="one_hundred_thirty_dp">130dp</dimen>
+</resources>

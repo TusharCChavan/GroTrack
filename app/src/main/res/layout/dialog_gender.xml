@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background">
+
+
+    <TextView
+        android:fontFamily="@font/roboto_bold"
+        android:id="@+id/tvcontinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:gravity="right"
+            android:layout_gravity="right"
+            android:paddingRight="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:paddingBottom="@dimen/_15sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:textSize="@dimen/_18ssp"
+
+            />
+
+    <RelativeLayout
+
+            android:id="@+id/rlmale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="@font/roboto_regular"
+
+            android:layout_centerVertical="true"
+                android:id="@+id/texteng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_15ssp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:textColor="@color/white"
+                />
+
+        <ImageView
+                android:id="@+id/ivmale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/check_unfilled"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_20sdp"/>
+
+    </RelativeLayout>
+    <View
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_below="@id/texteng"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white"></View>
+    <RelativeLayout
+
+            android:id="@+id/rlfmale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="@font/roboto_regular"
+
+            android:layout_centerVertical="true"
+                android:id="@+id/textfmale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_15ssp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:textColor="@color/white"
+                />
+
+        <ImageView
+            android:id="@+id/ivfmale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_20sdp"
+            app:srcCompat="@drawable/check_unfilled" />
+
+    </RelativeLayout>
+
+    <View
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white"></View>
+    <RelativeLayout
+
+            android:id="@+id/rlother"
+            android:layout_below="@+id/relativelayeng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="@font/roboto_regular"
+
+            android:layout_centerVertical="true"
+                android:id="@+id/tvother"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_15ssp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:textColor="@color/white"
+                />
+
+        <ImageView
+                android:id="@+id/ivother"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/check_unfilled"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_20sdp"/>
+
+    </RelativeLayout>
+
+    <View
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white"></View>
+
+
+</LinearLayout>

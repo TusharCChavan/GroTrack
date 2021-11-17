@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.camera.ReturnToHomeScreenFragment">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:src="@drawable/logo"
+         />
+
+        <RelativeLayout
+            android:id="@+id/rl_refermd"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/ic_circle_md"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp" >
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/ic_medical_service" />
+        </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcolor"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:text="Refer to MD"/>
+
+
+      <RelativeLayout
+            android:id="@+id/rl_product"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/ic_circle_buyproduct"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp" >
+
+          <ImageView
+              android:layout_width="@dimen/_40sdp"
+              android:layout_height="@dimen/_40sdp"
+              android:layout_centerInParent="true"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:src="@drawable/ic_shopping_cart" />
+        </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcolor"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:text="Buy Products"/>
+
+
+
+    <RelativeLayout
+            android:id="@+id/rl_scalp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/ic_circle_buyproduct"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp" >
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:src="@drawable/hair_follicle" />
+        </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcolor"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:text="Scalp Treatment"/>
+
+
+
+
+
+</LinearLayout>

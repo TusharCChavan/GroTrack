@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.PatientsResultFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/imageView3"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:fontFamily="@font/roboto_bold"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient Name"
+        android:textColor="@color/text"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textSize="@dimen/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/select_patient"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/footer"
+        app:strokeColor="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:insetBottom="0dp"
+        android:textSize="@dimen/_10ssp"
+        android:text="New Scan"
+        android:textColor="@color/white"
+        app:cornerRadius="10dp"
+
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/select_patient1"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="20dp"
+        app:cornerRadius="10dp"
+        android:backgroundTint="@color/footer"
+        app:strokeColor="@color/white"
+        android:insetTop="0dp"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="@dimen/_10ssp"
+        android:text="Past Scan"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_patient" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
